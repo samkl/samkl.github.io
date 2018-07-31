@@ -4,9 +4,9 @@ Architecture: iphoneos-arm
 Maintainer: samkl
 Filename: ./debs/com.samkl.darkveexilium_1.0_iphoneos-arm.deb
 Size: 908718
-MD5sum: a6e8598121f75618f8502464413f9780
-SHA1: e0a0bbc140ac3dbeb2ca3a2b54e8c0f470cc4dbe
-SHA256: d701a9874c2e8462b5108fc40903887ab1f1f81551c04e5105c4e2f8a3e6c1e0
+MD5sum: 429178e6d7365f5a2770575354dd631f
+SHA1: 8b4719675924440f492e549f09d5f1c5621b8e41
+SHA256: ac964b3f0338bb376f8f881c8f9d4ea9db9b526ce5a0af63a81f764fe2480949
 Section: Themes (SpringBoard)
 Description: This is a dark version of Veexilium which themes most none dark icons. It is recommended to have veexilium installed.
 Author: samkl
@@ -18,9 +18,9 @@ Architecture: iphoneos-arm
 Maintainer: samkl
 Filename: ./debs/com.samkl.statusls_1.0_iphoneos-arm.deb
 Size: 1488092
-MD5sum: 55ddce35be7c63e52015971616be3f92
-SHA1: 9a3dadd2063d50c219ebcdc115d66394eb00d5b4
-SHA256: be5530a4ce442761bcc65f27665b03c5163c3d1a923ec499f28aba6f31ca0d01
+MD5sum: a0b5b8e0148bd85366550539ff2d9504
+SHA1: d0873988ee35ba320bee89b6abcaa71a308320f1
+SHA256: 612ff4adbed1a9e96963fef02ae3278d529bbf02158c4e740b30ecb847e52e33
 Section: Widgets
 Description: HTML widget which has all essential, including music player and status bar.
 Author: samkl
