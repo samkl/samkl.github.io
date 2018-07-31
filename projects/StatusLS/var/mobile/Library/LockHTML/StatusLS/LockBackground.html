@@ -84,7 +84,7 @@
 					var wifiLevelsB = ['img/wifi0B.png','img/wifi1B.png','img/wifi2B.png','img/wifi3B.png']
 					var signalLevelsB = ['img/signalBars0B.png','img/signalBars1B.png','img/signalBars2B.png','img/signalBars3B.png','img/signalBars4B.png']
 
-					barDiv.innerHTML =  '<br>' + '<img id = "signal" src="img/signalBars0W.png" width ="17px" height="17px">' + '&nbsp;' + '<img id = "wifi" src="img/wifi0W.png" width ="17px" height="17px">' + '&nbsp;';
+					barDiv.innerHTML =  '<br>' + '<img id = "signal" src="img/signalBars0W.png" width ="17px" height="17px">' + '&nbsp;' + '<img id = "wifi" src="img/wifi0W.png" width ="17px" height="17px">' + '&nbsp;' + signalBars;
 					if(colorWhite){
 						document.getElementById('signal').src = signalLevelsW[signalBars];
 						document.getElementById('wifi').src = wifiLevelsW[wifiBars];

@@ -1,6 +1,6 @@
 Package: com.samkl.StatusLS
 Name: StatusLS
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: HTML widget which has all essential, including music player and status bar.
 Maintainer: samkl
