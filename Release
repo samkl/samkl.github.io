@@ -1,0 +1,8 @@
+Origin: Sam KL's Public Repository
+Label: Sam KL's Public Repo
+Suite: stable
+Version: 1.0
+Codename: tangelo
+Architectures: iphoneos-arm
+Components: main
+Description: Sam KL's Public Repo
