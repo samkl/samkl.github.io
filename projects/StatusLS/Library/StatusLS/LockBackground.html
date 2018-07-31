@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
+	<link href="fonts/fontawesome/css/all.css" rel="stylesheet">
+	<script type="text/javascript" src="js/clock.js"></script>
+
+</head>
+
+
+<body onload="init()">
+
+
+	<div class="container">
+		<div id = "time">00:00</div>
+		<div id = "date"></div>
+		<div id = "battery"></div>
+		<div id = "bar">
+			<br>
+			<img id = "signal" src="img/signalBars0W.png" width ="17px" height="17px">
+			&nbsp;
+			<img id = "wifi" src="img/wifi0W.png" width ="17px" height="17px">
+		</div>
+
+
+		<i id="playPause" class="" onclick="playPause()" ></i>
+		<i id="next" class="" onclick="next()" ></i>
+		<i id="prev" class="" onclick="prev()"></i>
+		
+		<div id = "nowPlaying">Not Playing</div>
+
+	</div>
+
+	<script type="text/javascript">
+		if(colorWhite){
+			document.body.style.color = "white";
+		}else{
+			document.body.style.color = "black";
+		}
+
+		var doc = document,
+			timeDiv = doc.getElementById('time'),
+			dateDiv = doc.getElementById('date'),
+			batteryDiv = doc.getElementById('battery'),
+			barDiv = doc.getElementById('bar'),
+			playPauseDiv = doc.getElementById('playPause');
+			nextDiv = doc.getElementById('next');
+			prevDiv = doc.getElementById('prev');
+			nowPlayingDiv = doc.getElementById('nowPlaying');
+
+
+
+
+		function playPause() {
+			window.location = 'xeninfo:playpause';
+		}
+		function next() {
+			window.location = 'xeninfo:nexttrack';
+		}
+		function prev() {
+			window.location = 'xeninfo:prevtrack';
+		}
+
+
+		clock({
+			twentyfour : true,
+  			padzero : false,
+  			refresh : 5000,
+  			success: function(clock){
+  			 	timeDiv.innerHTML = clock.hour() + ':' + clock.minute();
+  				dateDiv.innerHTML = clock.date() + '/' + clock.month() + '/' + clock.year() + '   ' + '<strong>' + clock.daytext() + '</strong>';
+  			}
+  		});
+
+
+		function mainUpdate(type){
+				if(type == "statusbar"){
+					var wifiLevelsW = ['img/wifi0W.png','img/wifi1W.png','img/wifi2W.png','img/wifi3W.png']
+					var signalLevelsW = ['img/signalBars0W.png','img/signalBars1W.png','img/signalBars2W.png','img/signalBars3W.png','img/signalBars4W.png']
+
+					var wifiLevelsB = ['img/wifi0B.png','img/wifi1B.png','img/wifi2B.png','img/wifi3B.png']
+					var signalLevelsB = ['img/signalBars0B.png','img/signalBars1B.png','img/signalBars2B.png','img/signalBars3B.png','img/signalBars4B.png']
+
+					barDiv.innerHTML =  '<br>' + '<img id = "signal" src="img/signalBars0W.png" width ="17px" height="17px">' + '&nbsp;' + '<img id = "wifi" src="img/wifi0W.png" width ="17px" height="17px">' + '&nbsp;';
+					if(colorWhite){
+						document.getElementById('signal').src = signalLevelsW[signalBars];
+						document.getElementById('wifi').src = wifiLevelsW[wifiBars];
+					}else{
+						document.getElementById('signal').src = signalLevelsB[signalBars];
+						document.getElementById('wifi').src = wifiLevelsB[wifiBars];
+					}
+
+
+				}
+				else if(type == "battery"){
+					batteryDiv.innerHTML =   (batteryCharging? ' <span style="font-size:12px" class="fas fa-bolt"></span>&nbsp;' : "") + batteryPercent + '%';
+				}
+				else if(type=="music"){
+					if(artist == "(null)" || artist == null){
+						document.getElementById('nowPlaying').innerHTML = " ";
+						playPauseDiv.className = "";
+						nextDiv.className = "";
+						prevDiv.className = "";
+
+						playPauseDiv.style.display = "hidden";
+						nextDivt.style.display = "hidden";
+						prevDiv.style.display = "hidden";
+
+						
+					}else{
+						document.getElementById('nowPlaying').innerHTML = 'Now Playing: ' + title + '&nbsp;' + '-' + '&nbsp;' + artist;
+						playPauseDiv.className = "fas fa-play";
+						nextDiv.className = "fas fa-step-forward";
+						prevDiv.className = "fas fa-step-backward";
+
+						playPauseDiv.style.display = "inline";
+						nextDivt.style.display = "inline";
+						prevDiv.style.display = "inline";
+
+						
+					}
+
+					
+				}
+
+			}
+	</script>
+
+
+
+
+</body>
+</html>

@@ -5,11 +5,25 @@ Maintainer: samkl
 Depends: Anemone
 Filename: ./debs/com.samkl.darkveexilium_1.0_iphoneos-arm.deb
 Size: 908728
-MD5sum: 7804da70cdeb5b59f20ac59f6df109cf
-SHA1: 19eb40ab878453f4d5808736bb1cbf2863963378
-SHA256: 03b3db19793b89268a101b987177bb0a4a5fd9ffd8483605f3102484890d1db5
+MD5sum: 5f7fed4d9dcc9c6ec1174a112b93506b
+SHA1: c0f57ab0a00f8b63f6c08f89e3df730010bc8b56
+SHA256: e453f38ca7c7724263c32a42f5be1599dd02f9fecd4aa85a30bad9ff6989b0f5
 Section: Themes (SpringBoard)
 Description: This is a dark version of Veexilium which themes most none dark icons. It is recommended to have veexilium installed.
 Author: samkl
 Name: DarkVeexilium
+
+Package: com.samkl.StatusLS
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: samkl
+Filename: ./debs/com.samkl.statusls_1.0_iphoneos-arm.deb
+Size: 1487080
+MD5sum: cb9306dc7cf5eee84362d34a3de26a2b
+SHA1: ada7510d3f0f88ac8714da63fb1d53d753d8122b
+SHA256: df5fb8b40aeabae2690854583549f9efceecfaf288e55eeccf10e9a2663dab81
+Section: Widgets
+Description: HTML widget which has all essential, including music player and status bar.
+Author: samkl
+Name: StatusLS
 

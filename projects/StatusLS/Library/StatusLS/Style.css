@@ -1,0 +1,117 @@
+
+  body{
+    color:white;  
+    font-size: 17px;
+    padding:0;
+    margin:0;
+    text-shadow: 2px 2px rgba(0,0,0,0);
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .container div{
+    margin-top: 60px;
+    left: 17px;
+    position: absolute;
+    font-family: 'GReg';
+  }
+  #date{
+    top:108px;
+    width: 100%;
+    text-align: left;
+  }
+  #time{
+    top:50px;
+    position:relative;
+    left: 16px;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'RhodeBold';
+
+  }
+
+  #battery{
+    top:64px;
+    position: absolute;
+    left:  155px;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+  }
+  #nowPlaying{
+    top: 130px;
+  }
+  #bar{
+    top:64px;
+    position: absolute;
+    left: 155px;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+  }
+  #playPause{
+    font-size: 24px;
+    top:123px;
+    left: 78%;
+    position: absolute;
+    
+  }
+  #next{
+    font-size: 24px;
+    top: 123px;
+    left: 90%;
+    position: absolute;
+  }
+  #prev{
+    font-size: 24px;
+    top: 123px;
+    left: 65%;
+    position: absolute;
+  }
+  #nowPlaying{
+    font-size: 12px;
+  }
+
+
+@s-face{
+    font-family:GrBold;
+    src:url(fonts/GrBold.otf);
+}
+@font-face{
+    font-family:GrMed;
+    src:url(fonts/GrMed.otf);
+}
+@font-face{
+    font-family:RhodeBold;
+    src:url(fonts/RhodeBold.otf);
+}
+@font-face{
+    font-family:RhodeM;
+    src:url(fonts/RhodeM.otf);
+}
+@font-face{
+    font-family:GBold;
+    src:url(fonts/GBold.otf);
+}
+@font-face{
+    font-family:GMed;
+    src:url(fonts/GMed.otf);
+}
+@font-face{
+    font-family:GReg;
+    src:url(fonts/GReg.otf);
+}
+@font-face{
+    font-family:QSBold;
+    src:url(fonts/QSBold.otf);
+}
+@font-face{
+    font-family:QSLight;
+    src:url(fonts/QSLight.otf);
+}
