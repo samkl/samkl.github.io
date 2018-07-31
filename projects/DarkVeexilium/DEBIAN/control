@@ -1,6 +1,5 @@
 Package: com.samkl.DarkVeexilium
 Name: DarkVeexilium
-Depends: Anemone
 Version: 1.0
 Architecture: iphoneos-arm
 Description: This is a dark version of Veexilium which themes most none dark icons. It is recommended to have veexilium installed. 
